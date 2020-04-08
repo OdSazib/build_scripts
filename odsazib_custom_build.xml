@@ -18,12 +18,11 @@
 
 
 <!-- BUILD MANIFEST -->
-	<project name="android_build_scripts" path="build/scripts" remote="OdSazib" revision="Evo-10-EAS" >
+	<project name="build_scripts" path="build/scripts" remote="OdSazib" revision="Evo-10-EAS" >
 	<linkfile src="odsazib_custom_build.sh" dest=".repo/local_manifests/odsazib.sh" />
 	<linkfile src="make_jasmine.sh" dest="mj.sh" />
 	<linkfile src="make_wayne.sh" dest="my.sh" />
 	<linkfile src="sync.sh" dest="sync.sh" />
-	<linkfile src="buildmodule.sh" dest="m_module.sh" />
 	</project>
 
 <!--Remove some shitty projects and their sources-->
