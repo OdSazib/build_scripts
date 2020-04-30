@@ -5,5 +5,5 @@ git fetch https://github.com/OdSazib/frameworks_opt_telephony.git ten && git che
 cd ../../..
 
 cd kernel/xiaomi/sdm660
-git fetch git@github.com:OdSazib/kernel_xiaomi_sdm660.git && git cherry-pick 1d82c9f77ae281245062a8c631094a49be165084^..b96114ceaf5183b59bf9ef149a157629adcc6f77
+git fetch git@github.com:OdSazib/kernel_xiaomi_sdm660.git && git cherry-pick b4f8f0bae44f0c21d3600a771e2db177824ccf51^..ca203b44e999a44a0924004ea8c5eadddacfb451
 cd ../../..
