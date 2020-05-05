@@ -16,11 +16,11 @@
 
 
 <!-- BUILD MANIFEST -->
-	<project name="build_scripts" path="build/scripts" remote="OdSazib" revision="Evo-10-EAS" >
-	<linkfile src="make_jasmine.sh" dest="mj.sh" />
-	<linkfile src="make_wayne.sh" dest="mw.sh" />
-	<linkfile src="sync.sh" dest="sync.sh" />
-	</project>
+  <project name="build_scripts" path="scripts" remote="OdSazib" revision="Evo-10-EAS" >
+  <linkfile src="make_jasmine.sh" dest="mj.sh" />
+  <linkfile src="make_wayne.sh" dest="mw.sh" />
+  <linkfile src="sync.sh" dest="sync.sh" />
+  </project>
 
 <!--Remove some shitty projects and their sources-->
    <remove-project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
