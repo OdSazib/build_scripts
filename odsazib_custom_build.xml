@@ -9,6 +9,9 @@
 
    <remote name="Clang"
           fetch="https://github.com/crdroidandroid/"/>
+   
+   <remote name="Proton"
+          fetch="https://github.com/kdrag0n/"/>
 
    <remote  name="sdm660"
            fetch="ssh://git@github.com/xiaomi-sdm660/"/>
@@ -50,6 +53,7 @@
   <project name="android_vendor_xiaomi_wayne" path="vendor/xiaomi/wayne" remote="sdm660" revision="master" />
   <project name="android_vendor_xiaomi_MiuiCamera" path="vendor/xiaomi/MiuiCamera" remote="sdm660" revision="master" />
 
-<!-- Clang 10.0.6 -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r377782d" name="android_prebuilts_clang_host_linux-x86_clang-6364210" remote="Clang" revision="10.0"/>
+<!-- Clang 11.0.1 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="android_prebuilts_clang_host_linux-x86_clang-6443078" remote="Clang" revision="10.0"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-r383902p" name="proton-clang" remote="Proton" revision="master"/>
 </manifest>
