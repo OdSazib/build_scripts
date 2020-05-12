@@ -37,7 +37,7 @@
 
 <!-- jasmine -->
   <project name="android_device_xiaomi_jasmine_sprout" path="device/xiaomi/jasmine_sprout" remote="sdm660" revision="Evo-10"/>
-  <project name="device_twrp" path="device/twrp/jasmine_sprout" remote="OdSazib" revision="old-addon"/>
+  <project name="device_twrp" path="device/twrp/jasmine_sprout" remote="OdSazib" revision="jasmine_sprout"/>
 
 <!-- Wayne -->
   <project name="android_device_xiaomi_wayne" path="device/xiaomi/wayne" remote="sdm660" revision="Evo-10"/>
