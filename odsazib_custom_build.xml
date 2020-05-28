@@ -18,7 +18,7 @@
 
 
 <!-- BUILD MANIFEST -->
-  <project name="build_scripts" path="scripts" remote="OdSazib" revision="Evo-10-HMP" >
+  <project name="build_scripts" path="build/scripts" remote="OdSazib" revision="Evo-10-HMP" >
   <linkfile src="make_jasmine.sh" dest="mj.sh" />
   <linkfile src="make_wayne.sh" dest="mw.sh" />
   <linkfile src="sync.sh" dest="sync.sh" />
@@ -33,7 +33,7 @@
 <!-- XIAOMI MANIFEST -->
 
 <!-- kernel -->
-  <project name="android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="sdm660" revision="hmp"/>
+  <project name="android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="OdSazib" revision="clean"/>
 
 <!-- jasmine -->
   <project name="android_device_xiaomi_jasmine_sprout" path="device/xiaomi/jasmine_sprout" remote="sdm660" revision="Evo-10"/>
