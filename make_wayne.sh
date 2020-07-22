@@ -7,4 +7,4 @@ rm -r /home/odsazib/evo/out/.lock
 source build/envsetup.sh
 export KBUILD_BUILD_USER=OdSazib
 export KBUILD_BUILD_HOST=Netizen
-lunch aosp_wayne-userdebug
+lunch aosp_wayne-user
