@@ -22,6 +22,8 @@
   <linkfile src="make_jasmine.sh" dest="mj.sh" />
   <linkfile src="make_wayne.sh" dest="mw.sh" />
   <linkfile src="sync.sh" dest="sync.sh" />
+  <linkfile src="jasmine_sync.sh" dest="jsync.sh" />
+  <linkfile src="wayne_sync.sh" dest="wsync.sh" />
   </project>
 
 <!--Remove some shitty projects and their sources-->
