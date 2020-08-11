@@ -4,8 +4,8 @@
   <remote name="ok"
           fetch="https://android.googlesource.com"/>
 
-   <remote  name="lineageos"
-           fetch="https://github.com/LineageOS/"/>
+   <remote  name="evox"
+           fetch="https://github.com/Evolution-X-Devices/"/>
 
    <remote name="Clang"
           fetch="https://github.com/crdroidandroid/"/>
@@ -22,6 +22,8 @@
   <linkfile src="make_jasmine.sh" dest="mj.sh" />
   <linkfile src="make_wayne.sh" dest="mw.sh" />
   <linkfile src="sync.sh" dest="sync.sh" />
+  <linkfile src="jasmine_sync.sh" dest="jsync.sh" />
+  <linkfile src="wayne_sync.sh" dest="wsync.sh" />
   </project>
 
 <!--Remove some shitty projects and their sources-->
@@ -33,21 +35,21 @@
 <!-- XIAOMI MANIFEST -->
 
 <!-- kernel -->
-  <project name="android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="sdm660" revision="master"/>
+  <project name="kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="OdSazib" revision="ten-hmp"/>
 
 <!-- jasmine -->
-  <project name="android_device_xiaomi_jasmine_sprout" path="device/xiaomi/jasmine_sprout" remote="sdm660" revision="Evo-10"/>
-  <project name="device_twrp" path="device/twrp/jasmine_sprout" remote="OdSazib" revision="jasmine_sprout"/>
+  <project name="device_xiaomi_jasmine_sprout" path="device/xiaomi/jasmine_sprout" remote="OdSazib" revision="ten"/>
+  <project name="recovery_twrp" path="recovery/twrp/xiaomi/jasmine_sprout" remote="OdSazib" revision="jasmine_sprout"/>
 
 <!-- Wayne -->
-  <project name="android_device_xiaomi_wayne" path="device/xiaomi/wayne" remote="sdm660" revision="Evo-10"/>
+  <project name="device_xiaomi_wayne" path="device/xiaomi/wayne" remote="OdSazib" revision="ten"/>
 
 <!-- Common-->
-  <project name="android_device_xiaomi_sdm660-common" path="device/xiaomi/sdm660-common" remote="sdm660" revision="Evo-10-HMP"/>
+  <project name="device_xiaomi_sdm660-common" path="device/xiaomi/sdm660-common" remote="OdSazib" revision="ten-hmp"/>
 
 <!-- vendor -->
-  <project name="android_vendor_xiaomi_sdm660-common" path="vendor/xiaomi/sdm660-common" remote="OdSazib" revision="Evo-10-HMP" />
-  <project name="android_vendor_xiaomi_wayne-common" path="vendor/xiaomi/wayne-common" remote="sdm660" revision="master" />
+  <project name="vendor_xiaomi_sdm660-common" path="vendor/xiaomi/sdm660-common" remote="OdSazib" revision="ten-hmp" />
+  <project name="vendor_xiaomi_wayne-common" path="vendor/xiaomi/wayne-common" remote="OdSazib" revision="ten" />
   <project name="android_vendor_xiaomi_MiuiCamera" path="vendor/xiaomi/MiuiCamera" remote="sdm660" revision="master" />
 
 <!-- Clang 11.0.1 -->
