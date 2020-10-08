@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <remote name="ok"
+        fetch="https://android.googlesource.com"/>
+
+   <remote name="Clang"
+        fetch="https://github.com/crdroidmod/"
+        clone-depth="1" />
+
+   <remote  name="sdm660"
+        fetch="https://github.com/xiaomi-sdm660/"/>
+
+   <remote  name="OdSazib"
+        fetch="https://github.com/OdSazib/"/>
+
+   <!--Gapps-->
+   <remote  name="OdSazibGL"
+        fetch="https://gitlab.com/OdSazib/"
+        clone-depth="1" />
+   
+   <project path="vendor/gapps" name="gapps" remote="OdSazibGL" revision="ten" />
+
+
+<!-- BUILD MANIFEST -->
+  <project name="build_scripts" path="build/scripts" remote="OdSazib" revision="RR-Q" >
+  <linkfile src="make_jasmine.sh" dest="mj.sh" />
+  <linkfile src="sync.sh" dest="sync.sh" />
+  </project>
+
+<!-- DEVICE SOURCE -->
+  <project name="kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="OdSazib" revision="ten-hmp"/>
+  <project name="device_xiaomi_jasmine_sprout" path="device/xiaomi/jasmine_sprout" remote="OdSazib" revision="rr-q"/>
+  <project name="recovery_twrp" path="recovery/twrp/xiaomi/jasmine_sprout" remote="OdSazib" revision="jasmine_sprout"/>
+  <project name="device_xiaomi_sdm660-common" path="device/xiaomi/sdm660-common" remote="OdSazib" revision="rr-hmp"/>
+  <project name="vendor_xiaomi_sdm660-common" path="vendor/xiaomi/sdm660-common" remote="OdSazib" revision="ten-hmp" />
+  <project name="vendor_xiaomi_wayne-common" path="vendor/xiaomi/wayne-common" remote="OdSazib" revision="ten" />
+  <project name="android_vendor_xiaomi_MiuiCamera" path="vendor/xiaomi/MiuiCamera" remote="sdm660" revision="master" />
+
+<!-- Clang 11.0.1 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="prebuilts_clang_host_linux-x86_clang-6443078" remote="OdSazib" revision="10.0"/>
+</manifest>
